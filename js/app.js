@@ -1,7 +1,7 @@
 (() => {
     const app = {
         loopNavigation() {
-            console.log("Create navigation")
+            console.log("Create Navigation")
             return NavigationArray.map((item) => {
                 if(item.type === "internal"){
                     if(item.name === "koop tickets")
@@ -16,9 +16,16 @@
         loopLineUp() {
             console.log("Create LineUp");
             return LineUpArray.map((item) => {
-                const ArtistPlayDay = new Date(item.from).getDay();
-
-                return $('.test').append($(`<li>hi</li>`));
+                const ArtistPlayDay = days[new Date(item.from).getDay()];
+                return $('.test').append($(`
+                <div class="lineup__info">
+                    <img src="${item.artist.picture.small}" alt="">
+                    <div>
+                        <span>${ArtistPlayDay}</span>
+					    <span></span>
+                    </div>
+                </div>
+                `));
             });
         },
         Initialize() {

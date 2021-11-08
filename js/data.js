@@ -61,7 +61,7 @@ const LineUpArray = [
                 instagram: ""
             },
             picture: {
-                small: "",
+                small: "https://assets.rockwerchter.be/files/cache/medium/files/fnm-1500-60cc6b19a9efc.jpg",
                 large: ""
             },
             media: {
@@ -71,11 +71,14 @@ const LineUpArray = [
             place: {
                 name: ""
             },
-            from: 12,
-            to: 12,
-            createdAt: 12,
-            modifiedAt: 12,
-            isHeadliner: false
-        }
+        },
+        from: 1636397246930,
+        to: 1636397246930,
+        createdAt: 1636397246930,
+        modifiedAt: 1636397246930,
+        isHeadliner: false
     }
 ]
+
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday",
+"Thursday", "Friday", "Saturday"];
