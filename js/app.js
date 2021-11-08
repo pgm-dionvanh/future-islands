@@ -1,5 +1,12 @@
 (() => {
+
+/* Navigation array */
 const NavigationArray = [
+    {
+        name: "Test",
+        link: "hallo.com",
+        type: "internal"
+    },
     {
         name: "Test",
         link: "hallo.com",
@@ -10,7 +17,8 @@ const NavigationArray = [
 const app = {
     loopNavigation() {
         for (item of NavigationArray){
-            console.log(item);
+            /* Usage of jquery */
+            $('#NavigationList').append($(`<li><a>${item.name}</a></li>`));
         }
     },
     
