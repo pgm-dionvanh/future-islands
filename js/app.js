@@ -1,7 +1,7 @@
 (() => {
 const NavigationArray = [
     {
-        name: "Sahin zijn ma",
+        name: "Test",
         link: "hallo.com",
         type: "internal"
     }
