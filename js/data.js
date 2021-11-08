@@ -80,5 +80,33 @@ const LineUpArray = [
     }
 ]
 
+const socialListArray = [
+    {
+		'name': 'Facebook',
+		'link': 'http://www.facebook.com/rockwerchterfestival',
+		'type': 'facebook'
+	},
+	{
+		'name': 'Twitter',
+		'link': 'http://www.twitter.com/rockwerchter',
+		'type': 'twitter'
+	},
+	{
+		'name': 'Instagram',
+		'link': 'http://instagram.com/rockwerchterfestival',
+		'type': 'instagram'
+	},
+	{
+		'name': 'Spotify',
+		'link': 'https://play.spotify.com/user/rockwerchterofficial',
+		'type': 'spotify'
+	},
+	{
+		'name': 'Youtube',
+		'link': 'http://www.youtube.com/user/rockwerchterfestival',
+		'type': 'youtube'
+	}
+]
+
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday",
 "Thursday", "Friday", "Saturday"];

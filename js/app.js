@@ -28,10 +28,17 @@
                 `));
             });
         },
+        CreateSocialsMenu() {
+            console.log("Create social menu");
+            return socialListArray.map((item) => {
+                return $('.social__list').append($(`<li class="soc__item"><a href="${item.link}" target="_blank"><img src="img/icons/${item.type}.png" alt="${item.name}" class="social__icon"></a></li>`));
+            })
+        },
         Initialize() {
             console.log("Initialize app");
             this.loopNavigation();
             this.loopLineUp();
+            this.CreateSocialsMenu();
         }
     }
 
